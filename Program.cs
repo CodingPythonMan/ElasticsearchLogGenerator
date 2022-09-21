@@ -10,11 +10,13 @@ namespace ElasticSearchProject
         {
             // 테스트 케이스 작성
             SendLogService sendLogService = new SendLogService();
-            
+
             // 로그 남기기
-            //SendListLog(10);
-            sendLogService.SendDictLog(10);
+            //sendLogService.SendListLog(10);
+            //sendLogService.SendDictLog(10);
             //sendLogService.SendArrayLog(10);
+            sendLogService.SendClassLog(10);
+            //sendLogService.SendNestedLog(10);
 
             ReceiveLog();
             Console.ReadLine();

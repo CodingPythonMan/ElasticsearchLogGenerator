@@ -61,5 +61,42 @@ namespace ElasticSearchProject
 
             LogService.AddLog<Custom3Log>(customLog);
         }
+
+        public void SendNestedLog(int loop)
+        {
+            Random random = new Random();
+
+            Custom4Log customLog = new Custom4Log();
+            customLog.Kennen = 3;
+            customLog.TM = DateTimeOffset.Now.ToUnixTimeSeconds().ToString();
+            customLog.Characters = new Character[loop];
+
+            for (int i = 0; i < loop; i++)
+            {
+                customLog.Characters[i] = new Character();
+                customLog.Characters[i].CharacterIndex = random.Next(1, 10);
+            }
+
+            LogService.AddLog<Custom4Log>(customLog);
+        }
+
+        public void SendClassLog(int loop)
+        {
+            Random random = new Random();
+
+            Custom5Log customLog = new Custom5Log();
+            customLog.Kennen = 3;
+            customLog.TM = DateTimeOffset.Now.ToUnixTimeSeconds().ToString();
+            customLog.Characters = new Character1[loop];
+
+            for (int i = 0; i < loop; i++)
+            {
+                customLog.Characters[i] = new Character1();
+                customLog.Characters[i].CharacterIndex = random.Next(1, 10);
+                customLog.Characters[i].Value = 1;
+            }
+
+            LogService.AddLog<Custom5Log>(customLog);
+        }
     }
 }

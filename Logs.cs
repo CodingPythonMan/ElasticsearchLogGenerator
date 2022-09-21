@@ -29,4 +29,26 @@ namespace ElasticSearchProject
     {
         public int[] Characters { get; set; }
     }
+
+    public class Custom4Log : BaseLog
+    {
+        [Nested]
+        public Character[] Characters { get; set; }
+    }
+
+    public class Custom5Log : BaseLog
+    {
+        public Character1[] Characters { get; set; }
+    }
+
+    public class Character
+    {
+        public int CharacterIndex { get; set; }
+    }
+
+    public class Character1
+    {
+        public int CharacterIndex { get; set; }
+        public int Value { get; set; }
+    }
 }
