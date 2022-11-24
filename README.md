@@ -1,4 +1,4 @@
 # ElasticsearchLogGenerator
 Log Generator by C#
 
-![l_162093730_126_794eb23edbc0ed56eea579564187e9cb](https://user-images.githubusercontent.com/27558778/203872991-e718cda1-61bb-4a14-bd91-fdfa47a45552.png)
+![image](https://user-images.githubusercontent.com/27558778/203873096-2e823f10-add9-4a09-bb7f-035a66cc9303.png)
